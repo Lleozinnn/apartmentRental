@@ -42,11 +42,38 @@
                     <li><strong>WhatsApp:</strong> <a href="https://wa.me/552740028922">(27) 4002-8922</a></li>
                 </ol>
             </li>
-            <li>Por meio das redes sociais:
+            <li>
+                Por meio das redes sociais:
                 <ol>
                     <li><strong>Instagram:</strong> @belingApartamentos</li>
                     <li><strong>Facebook:</strong> Beling Apartamentos</li>
                 </ol>
+            </li>
+            <li>
+                Por meio de formulário:
+                <form action="#">
+                    <label for="nome">Nome:</label>
+                <input id="nome" type="text" placeholder="Digite seu nome" required name="nome"
+                    oninvalid="this.setCustomValidity('Por favor, Informe seu nome completo.')"
+                    oninput="this.setCustomValidity('')" minlength="5">
+                <br>
+                <label for="email">E-mail:</label>
+                <input id="email" type="e-mail" placeholder="Digite seu melhor E-mail"
+                    required  oninvalid="this.setCustomValidity('Digite o E-mail com o formato correto.')"
+                    oninput="this.setCustomValidity('')" name="email">
+                <br>
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" placeholder="Informe sua demanda" minlength="10" maxlength="500"
+                required oninvalid="this.setCustomValidity('A mensagem deve conter entre 10 e 500 caracteres')"
+                oninput="this.setCustomValidity('')"></textarea>
+                <br>
+                <input type="radio" name="termo" id="termo" required
+                oninvalid="this.setCustomValidity('Aceite este termo para que sua mensagem seja enviada.')"
+                oninput="this.setCustomValidity('')">
+                <label for="termo">Aceito que meus dados pessoais sejam processados pelo Beling Apartamentos</label>
+                <br>
+                <input type="submit" value="Enviar mensagem">
+                </form>
             </li>
         </ul> 
         </section>
