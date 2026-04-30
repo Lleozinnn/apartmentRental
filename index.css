@@ -1,0 +1,41 @@
+#beneficios {
+    background-color: darkgray;
+    padding: 10px;
+}
+#beneficios article {
+    border: 1px solid gray;
+    margin: 10px;
+}
+header {
+    background-color: blueviolet;
+}
+main {
+    background-color: burlywood;
+
+}
+body {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+#hero img {
+    position: relative;
+    width: 100%;
+}
+#hero article {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    margin-top: 400px;
+    margin-left: 400px;
+    padding: 10px;
+}
+header {
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+    position: absolute;
+    z-index: 2;
+    width: 95%;
+}
