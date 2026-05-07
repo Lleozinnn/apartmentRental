@@ -1,37 +1,94 @@
 body {
     margin: 0;
-
 }
+
+/* ESTILIZAÇÃO DO CABEÇALHO E SEUS ELEMENTOS */
 header {
-    background-color: rgb(148, 219, 170);
+    background-color: #FEFDDF;
+    margin-top: 0;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+header h1, header ul {
+    margin: 0;
+}
+header h1 {
+    color: #E87F24;
+}
+nav ul a {
+    margin-right: 10px;
+    text-decoration: none;
+    background-color: #FFC81E;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #E87F24;
+    color: black;
+}
+nav ul a:hover {
+    background-color: #FFC81E;
+    font-size: 15pt;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px dashed #E87F24;
+}
 
-}
-nav ul {
-    background-color: burlywood;
-}
+/* ESTILIZAÇÃO DA HERO E SEUS ELEMENTOS */
 #hero {
-    width: 100%;
-    background-color: rgb(153, 209, 255);
+    background-color: #0c69b1;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 60px;
-}
-#hero article{
-    background-color: bisque;
-    padding: 10px;
-    margin: 10px;
-    width: 70%;
-    margin-top: 50px;
+    justify-content: center;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 #hero form {
-    background-color: darkkhaki;
-    padding: 20px;
-    position: relative;
-    top: 30px;
-    border-radius: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+#hero form * {
+    font-size: 15pt;
+    margin: 10px;
+    width: 500px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30pt;
+    border: none;
+}
+#hero p {
+    color:#FFC81E;
+}
+#hero h2 {
+    margin: 0;
+    color: #E87F24;
+}
+
+/* ESTILIZAÇÃO DE BENEFÍCIOS E SEUS ELEMENTOS */
+#beneficios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#beneficios div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#beneficios div article {
+    background-color: #ffd6b2;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
 }

@@ -1,0 +1,6 @@
+Paleta de cores do site beling
+
+-> Laranja claro: #E87F24
+-> Amarelo: #FFC81E
+-> Bege esbranquiçado: #FEFDDF
+-> Azul claro: #73A5CA
