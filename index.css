@@ -1,22 +1,30 @@
 body {
     margin: 0;
+    background-color: #FCFCFA;
+    color: #2D2D2D;
+    width: 100%;
 }
 
 /* ESTILIZAÇÃO DO CABEÇALHO E SEUS ELEMENTOS */
 header {
-    background-color: #FEFDDF;
-    margin-top: 0;
-    padding: 10px;
+    background-color: rgba(35, 148, 0, 0.281);
+    box-shadow: 0px 0 20px rgba(0, 0, 0, 0.6);
+    margin: 20px;
+    padding: 20px;
+    width: calc(100% - 80px);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
 }
 header h1, header ul {
     margin: 0;
 }
-header h1 {
-    color: #E87F24;
+header img {
+    height: 50px;
 }
 nav ul a {
     margin-right: 10px;
@@ -37,8 +45,8 @@ nav ul a:hover {
 
 /* ESTILIZAÇÃO DA HERO E SEUS ELEMENTOS */
 #hero {
-    background-color: #0c69b1;
-    height: 40vh;
+    background-color: #ecf7ff;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
