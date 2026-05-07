@@ -100,22 +100,3 @@ nav ul a:hover {
     margin: 15px;
     padding: 5px;
 }
-
-/* ESTILIZAÇÃO DA SEÇÃO SOBRE E SEUS ELEMENTOS */
-#sobre {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-#sobre img {
-    width: 100%;
-}
-
-/* ESTILIZAÇÃO DA SEÇÃO DEPOIMENTOS E SEUS ELEMENTOS */
-#sobre {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
