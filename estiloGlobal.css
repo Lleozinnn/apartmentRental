@@ -1,0 +1,56 @@
+/* IMPORTAÇÕES E DEFINIÇÕES ESSENCIAIS */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+body {
+    margin: 0;
+    background-color: #FCFCFA;
+    color: #2D2D2D;
+    width: 100%;
+    height: 100vh;
+}
+* {
+    font-family: "Sora";
+}
+
+/* ESTILIZAÇÃO DO CABEÇALHO E SEUS ELEMENTOS */
+header {
+    background-color: #556b2f56;
+    box-shadow: 0 0 30px #556b2fc0;
+    margin: 20px;
+    padding: 20px;
+    width: calc(100% - 80px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+}
+header img {
+    height: 50px;
+}
+nav ul a {
+    margin-right: 10px;
+    text-decoration: none;
+    background-color: #556B2F;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    height: 56px;
+}
+nav ul a:hover {
+    background-color: #3F5221;
+    box-shadow: 0, 0, 20px, rgba(85,107,47,0.18);
+}
+
+/* Estilização do rodapé do site */
+footer {
+    background-color: #556B2F;
+    margin: 0;
+    height: 10vh;
+    text-align: center;
+    padding: 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 20px, 20px, 40px, rgba(85, 107, 47, 0.486);
+}

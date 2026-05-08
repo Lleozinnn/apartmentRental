@@ -1,121 +1,87 @@
-body {
-    margin: 0;
-    background-color: #FCFCFA;
-    color: #2D2D2D;
-    width: 100%;
-}
-
-/* ESTILIZAÇÃO DO CABEÇALHO E SEUS ELEMENTOS */
-header {
-    background-color: rgba(35, 148, 0, 0.281);
-    box-shadow: 0px 0 20px rgba(0, 0, 0, 0.6);
-    margin: 20px;
-    padding: 20px;
-    width: calc(100% - 80px);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    border-radius: 20px;
-    backdrop-filter: blur(50px);
-}
-header h1, header ul {
-    margin: 0;
-}
-header img {
-    height: 50px;
-}
-nav ul a {
-    margin-right: 10px;
-    text-decoration: none;
-    background-color: #FFC81E;
-    border-radius: 10px;
-    padding: 5px;
-    border: 1px solid #E87F24;
-    color: black;
-}
-nav ul a:hover {
-    background-color: #FFC81E;
-    font-size: 15pt;
-    border-radius: 20px;
-    padding: 10px;
-    border: 1px dashed #E87F24;
+main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
 }
 
 /* ESTILIZAÇÃO DA HERO E SEUS ELEMENTOS */
 #hero {
-    background-color: #ecf7ff;
+    /* background-color: gray; */
     height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
+    grid-row: 1;
+    grid-column: span 6;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+#hero article {
+    grid-column: 2 / 4;
+    grid-row: 6;
 }
 #hero form {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 30px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 2fr) 1fr;
+    grid-column: 2 / 4;
+    grid-row: 7;
 }
 #hero form * {
-    font-size: 15pt;
-    margin: 10px;
-    width: 500px;
-    text-align: center;
-    padding: 10px;
-    border-radius: 30pt;
+    border-radius: 20px;
     border: none;
+    text-align: center;
 }
-#hero p {
-    color:#FFC81E;
-}
-#hero h2 {
-    margin: 0;
-    color: #E87F24;
-}
-
-/* ESTILIZAÇÃO DE BENEFÍCIOS E SEUS ELEMENTOS */
+/* ESTILIZAÇÃO DOS BENEFÍCIOS E SEUS ELEMENTOS */
 #beneficios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    grid-column: 2 / 6;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+#beneficios h2 {
+    grid-column: span 4;
+    text-align: center;
 }
 #beneficios div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-#beneficios div article {
-    background-color: #ffd6b2;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 15px;
-    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
 /* ESTILIZAÇÃO DA SEÇÃO SOBRE E SEUS ELEMENTOS */
 #sobre {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    grid-column: span 6;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+#sobre h2 {
+    grid-column: span 6;
     text-align: center;
 }
+#sobre p {
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
 #sobre img {
-    width: 100%;
+    margin: 0;
+    grid-column: 5 / 6;
+    grid-row: 2;
 }
 
-/* ESTILIZAÇÃO DA SEÇÃO DEPOIMENTOS E SEUS ELEMENTOS */
-#sobre {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* ESTILIZAÇÃO DEPOIMENTOS E SEUS ELEMENTOS */
+#depoimentos {
+    grid-column: span 6;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+#depoimentos h2 {
+    grid-column: span 4;
+    text-align: center;
+    gap: 20px;
+}
+
+/* ESTILIZAÇÃO DO CTA E SEUS ELEMENTOS */
+#cta {
+    grid-column: 2 / 6;
+}
+#cta {
     text-align: center;
 }
