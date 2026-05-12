@@ -32,25 +32,27 @@ header img {
     margin-right: 30px;
 }
 nav {
-    display: flex;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
 }
-nav ul a {
+nav ul {
+    display: none;
+}
+nav ul button {
     margin-right: 10px;
     text-decoration: none;
     background-color: #556B2F;
     border-radius: 10px;
     padding: 5px;
     color: white;
-    height: 56px;
+    width: 130px;
+    border: 1px solid;
 }
-nav ul a:hover {
+nav ul button:hover {
     background-color: #3F5221;
     box-shadow: 0, 0, 20px, rgba(85,107,47,0.18);
 }
-
 /* Estilização do rodapé do site */
 footer {
     background-color: #556b2f2f;
