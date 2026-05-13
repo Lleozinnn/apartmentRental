@@ -61,18 +61,18 @@
                         <input id="nome" type="text" placeholder="Digite seu nome" required name="nome"
                             oninvalid="this.setCustomValidity('Por favor, Informe seu nome completo.')"
                             oninput="this.setCustomValidity('')" minlength="5">
-                        
+
                         <label for="email">E-mail:</label>
                         <input id="email" type="e-mail" placeholder="Digite seu melhor E-mail" required
                             oninvalid="this.setCustomValidity('Digite o E-mail com o formato correto.')"
                             oninput="this.setCustomValidity('')" name="email">
-                        
+
                         <label for="mensagem">Mensagem:</label>
                         <textarea name="mensagem" id="mensagem" placeholder="Informe sua demanda" minlength="10"
                             maxlength="500" required
                             oninvalid="this.setCustomValidity('A mensagem deve conter entre 10 e 500 caracteres')"
                             oninput="this.setCustomValidity('')"></textarea>
-                        
+
                         <input type="radio" name="termo" id="termo" required
                             oninvalid="this.setCustomValidity('Aceite este termo para que sua mensagem seja enviada.')"
                             oninput="this.setCustomValidity('')">
