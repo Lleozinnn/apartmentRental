@@ -7,14 +7,9 @@ main {
             #E8DFC9 30%,
             #BFCFAE 65%,
             #D6B97B 100%);
-    width: 100%;
     justify-items: center;
     align-items: center;
 }
-
-/* Sem Variáveis no momento */
-/* :root {
-} */
 
 /* ESTILIZAÇÃO DA HERO E SEUS ELEMENTOS */
 #hero {
@@ -79,7 +74,6 @@ main {
 
 #beneficios div article h3,
 #beneficios div article p {
-    color: red;
     margin: 10px;
 }
 
