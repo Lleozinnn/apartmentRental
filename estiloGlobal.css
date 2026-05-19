@@ -1,11 +1,13 @@
 /* IMPORTAÇÕES E DEFINIÇÕES ESSENCIAIS */
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
 body {
     margin: 0;
-    background-color: #FCFCFA;
+    background-color: #000000;
     color: #2D2D2D;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    position: relative;
 }
 * {
     font-family: "Sora";
@@ -15,17 +17,17 @@ body {
 header {
     background-color: #556b2f1a;
     box-shadow: 0 0 30px #00000059;
-    margin: 20px;
+    margin-top: 20px;
     padding: 20px;
-    width: calc(85% - 80px);
+    width: calc(85% - 40px);
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: fixed;
+    position: absolute;
     border-radius: 20px;
     backdrop-filter: blur(50px);
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%,0);
     justify-content: space-between;
 }
 header img {
@@ -54,7 +56,7 @@ nav ul button {
     padding: 5px;
     color: white;
     width: 130px;
-    border: 1px solid;
+    border: none;
 }
 nav ul button:hover {
     background-color: #3F5221;
@@ -62,18 +64,15 @@ nav ul button:hover {
 }
 /* Estilização do rodapé do site */
 footer {
-    width: 100%;
     background-color: #556b2f2f;
     margin: 0;
     grid-column: 2;
-    height: 10vh;
+    grid-row: 5;
     text-align: center;
     padding: 20px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     box-shadow: 20px, 20px, 40px, rgba(85, 107, 47, 0.5);
-    margin-left: 20px;
-    margin-right: 20px;
     backdrop-filter: blur(50px);
     margin-top: 50px;
 }
