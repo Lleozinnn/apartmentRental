@@ -23,7 +23,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: absolute;
+    position: fixed;
     border-radius: 20px;
     backdrop-filter: blur(50px);
     left: 50%;

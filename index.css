@@ -170,7 +170,7 @@ main {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    height: var(--depoimentos-height)
+    min-height: var(--depoimentos-height)
 }
 
 #depoimentos h2 {
