@@ -107,7 +107,7 @@ main {
     place-items: center;
     place-items: center;
     background: radial-gradient();
-    height: var(--beneficios-height);
+    min-height: var(--beneficios-height);
     background-color: var(--bg-dark);
 }
 
@@ -338,6 +338,7 @@ main {
     box-shadow: 15px 15px 15px 10px #00000011;
     border: 1px solid var(--border-color);
     gap: 30px;
+    margin-bottom: 50px;
 }
 #newsletter form div label {
     color: var(--text-main);
