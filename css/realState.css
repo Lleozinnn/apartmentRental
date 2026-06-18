@@ -1,0 +1,14 @@
+main {
+    display: grid;
+    grid-template-rows: 150px auto;
+    grid-template-columns: minmax(30px, 200px) auto minmax(30px, 200px);
+}
+#nossos-apartamentos {
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: auto 1fr 1fr 1fr;
+}
+#nossos-apartamentos article {
+    grid-row: 1;
+}
