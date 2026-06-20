@@ -1,7 +1,4 @@
 /* DEFINIÇÃO DA MAIN, E VARIÁVEIS DE ESTILO ESSENCIAIS */
-html {
-    scroll-behavior: smooth;
-}
 main {
     display: grid;
     grid-template-columns: 50px 1fr 50px;
