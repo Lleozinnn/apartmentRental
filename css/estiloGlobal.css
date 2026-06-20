@@ -86,10 +86,13 @@ nav ul:nth-child(2) button {
     width: 150px;
 }
 nav ul:nth-child(2) button:hover {
-    border-bottom: 5px solid var(--text-light);
+    background-color: var(--text-muted);
+    color: var(--text-light);
+    font-weight: 900;
 }
 nav ul:nth-child(1) button:hover {
-    background-color: var(--brand-secondary);
+    background-color: var(--text-muted);
+    font-weight: 700;
 }
 /* Estilização do rodapé do site */
 footer {
