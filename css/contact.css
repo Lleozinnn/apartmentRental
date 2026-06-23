@@ -1,0 +1,66 @@
+:root {
+    /* Cores de Marca (Baseadas no Logo) */
+    --brand-primary: #2d5a27;      /* Verde assinatura profundo (sofisticado) */
+    --brand-secondary: #c2a649;    /* Dourado/Bege elegante para destaques */
+    --brand-light: #f4f6f0;        /* Off-white esverdeado muito claro (fundos principais) */
+    
+    /* Fundos Alternativos (Para criar ritmo visual entre as seções de 100vh) */
+    --bg-dark: #1b3318;            /* Verde ultra-escuro para seções de grande impacto */
+    --bg-card: #ffffff;            /* Branco puro para destacar os cards do fundo */
+
+    /* Cores de Texto */
+    --text-main: #1c2b19;          /* Verde quase preto para máxima legibilidade */
+    --text-muted: #556b52;         /* Verde acinzentado para parágrafos e subtítulos */
+    --text-light: #ffffff;         /* Texto branco para fundos escuros */
+
+    /* Elementos Interativos e Bordas */
+    --border-color: #e2e8e0;       /* Linhas e bordas sutis */
+    --cta-hover: #22451d;          /* Variação do verde para estados de hover */
+}
+h1 {
+    color: var(--bg-dark);
+}
+h2 {
+    color: var(--brand-primary)
+}
+p {
+    color: var(--text-muted);
+}
+main {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: minmax(50px, auto) auto minmax(50px, auto);
+    grid-template-rows: 150px;
+    background: linear-gradient(135deg,
+            #F7F5EF 0%,
+            #E8DFC9 30%,
+            #BFCFAE 65%,
+            #D6B97B 100%);
+}
+main section {
+    grid-column: 2;
+    grid-row: 2;
+    
+}
+main section article {
+    margin-bottom: 50px;
+    margin-top: 30px;
+    border-left: 5px var(--brand-primary) solid;
+    border-right: 5px var(--brand-primary) solid;
+    padding: 20px;
+    padding-top: 5px;
+    border-radius: 5px;
+}
+.title {
+    text-align: center;
+    padding: 20px;
+    border: none;
+}
+
+.fisico iframe {
+    width: 100%;
+    height: 200px;
+}
+.fisico h2, .digital h2, .redesSociais h2 {
+    text-align: center;
+}

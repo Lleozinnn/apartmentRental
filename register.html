@@ -4,86 +4,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estiloGlobal.css">
-    <title>Criar cadastro</title>
+    <link rel="stylesheet" href="css/estiloGlobal.css">
+    <link rel="stylesheet" href="css/register.css">
+    <title>Cadastrar</title>
 </head>
 
 <body>
     <header>
-                <img src="assets/logo.png" alt="Logotipo Beling Apartamentos">
+        <img src="assets/logo.png" alt="Logotipo Beling Apartamentos">
         <nav>
             <ul>
-                <a href="index.html">Início</a>
-                <a href="realState.html">Nossos Imóveis</a>
-                <a href="contact.html">Contate-nos</a>
-                <a href="register.html">Crie uma conta</a>
-                <a href="login.html">Faça login</a>
+                <a href="index.html"><button>Início</button></a>
+                <a href="realState.html"><button>Imóveis</button></a>
+                <a href="contact.html"><button>Contatos</button></a>
+            </ul>
+            <ul>
+                <a href="register.html"><button>Cadastro</button></a>
+                <a href="login.html"><button>Login</button></a>
             </ul>
         </nav>
+        <img src="assets/icones/menu.svg" alt="Menu" class="menu">
     </header>
     <main>
-        <section>
-            <h1>Cadastre-se</h1>
-            <h2>Preencha o formulário a seguir e realize seu cadastro em instantes</h2>
+        <video src="assets/videos/fundo_video2.mp4" class="fundo" autoplay muted loop></video>
+        <section class="cadastro">
+            <article>
+                <h1>Cadastre-se</h1>
+                <p>Preencha o formulário a seguir e realize seu cadastro em instantes</p>
+            </article>
+
             <form action="login.html">
-                <label for="nome">Nome:</label>
-                <input id="nome" type="text" placeholder="Digite seu nome" required name="nome"
-                    oninvalid="this.setCustomValidity('Por favor, Informe seu nome completo.')"
-                    oninput="this.setCustomValidity('')" minlength="5">
-                
-                <label for="cpf">CPF:</label>
-                <input id="cpf" type="text" placeholder="Digite seu CPF" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}"
-                    required maxlength="14" oninvalid="this.setCustomValidity('Digite o cpf com o formato correto.')"
-                    oninput="this.setCustomValidity('')" name="cpf">
-                
-                <label for="email">E-mail:</label>
-                <input id="email" type="email" placeholder="Digite seu E-mail" required
-                    oninvalid="this.setCustomValidity('Por favor, Informe um e-mail válido.')"
-                    oninput="this.setCustomValidity('')" name="email">
-                
-                <label for="telefone">Telefone:</label>
-                <input id="telefone" type="tel" placeholder="Digite seu telefone" required name="telefone"
-                    oninvalid="this.setCustomValidity('Digite um telefone válido sem pontuações.')"
-                    oninput="this.setCustomValidity('')" minlength="9" maxlength="11">
-                
-                <label for="nascimento">Data de nascimento:</label>
-                <input id="nascimento" type="date" required name="nascimento"
-                    oninvalid="this.setCustomValidity('Por favor, Informe sua data de nascimento')"
-                    oninput="this.setCustomValidity('')">
-                
-                <label for="senha">Senha:</label>
-                <input id="senha" type="password" placeholder="Crie uma senha forte" required minlength="6"
-                    oninvalid="this.setCustomValidity('Digite uma senha com no mínimo 6 caracteres')"
-                    oninput="this.setCustomValidity('')" name="senha">
-                
-                <label for="genero">Gênero:</label>
-                <input type="radio" name="genero" id="masculino" value="Masculino" required name="genero">
-                <label for="masculino">Masculino</label>
-                <input type="radio" name="genero" id="feminino" value="Feminino" required name="genero">
-                <label for="feminino">Feminino</label>
-                
-                <label for="termos">Aceite os termos a seguir:</label>
-                
-                <input type="checkbox" name="termos" id="termo1" value="termo1" required
-                    oninvalid="this.setCustomValidity('Aceite este termo para prosseguir.')"
-                    oninput="this.setCustomValidity('')">
-                <label for="termo1">Aceito ter meus dados armazenados durante o uso do serviço</label>
-                
-                <input type="checkbox" name="termos" id="termo2" value="termo2" required
-                    oninvalid="this.setCustomValidity('Aceite este termo para prosseguir.')"
-                    oninput="this.setCustomValidity('')">
-                <label for="termo2">Aceito os termos e condições desse site</label>
-                
-                <input type="checkbox" name="termos" id="termo3" value="termo3">
-                <label for="termo3">Aceito receber comunicações sobre novidades e ofertas</label>
-                
-                <input type="submit" value="Efetuar Cadastro">
+                <fieldset class="personalData">
+                    <legend>Dados Pessoais</legend>
+                    <div class="nome">
+                        <label for="nome">Nome:</label>
+                        <input id="nome" type="text" placeholder="Digite seu nome" required name="nome"
+                            oninvalid="this.setCustomValidity('Por favor, Informe seu nome completo.')"
+                            oninput="this.setCustomValidity('')" minlength="5">
+                    </div>
+                    <div class="cpf">
+                        <label for="cpf">CPF:</label>
+                        <input id="cpf" type="text" placeholder="Digite seu CPF"
+                            pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" required maxlength="14"
+                            oninvalid="this.setCustomValidity('Digite o cpf com o formato correto.')"
+                            oninput="this.setCustomValidity('')" name="cpf">
+                    </div>
+                    <div class="telefone">
+                        <label>Telefone:</label>
+                        <input id="telefone" type="tel" placeholder="Digite seu telefone" required name="telefone"
+                            oninvalid="this.setCustomValidity('Digite um telefone válido sem pontuações.')"
+                            oninput="this.setCustomValidity('')" minlength="9" maxlength="11">
+                    </div>
+                    <div class="email">
+                        <label>E-mail:</label>
+                        <input id="email" type="email" placeholder="Digite seu E-mail" required
+                            oninvalid="this.setCustomValidity('Por favor, Informe um e-mail válido.')"
+                            oninput="this.setCustomValidity('')" name="email">
+                    </div>
+                    <div class="nascimento">
+                        <label>Data de nascimento:</label>
+                        <input id="nascimento" type="date" required name="nascimento"
+                            oninvalid="this.setCustomValidity('Por favor, Informe sua data de nascimento')"
+                            oninput="this.setCustomValidity('')">
+                    </div>
+                    <div class="senha">
+                        <label>Senha:</label>
+                        <input id="senha" type="password" placeholder="Crie uma senha forte" required minlength="6"
+                            oninvalid="this.setCustomValidity('Digite uma senha com no mínimo 6 caracteres')"
+                            oninput="this.setCustomValidity('')" name="senha">
+                    </div>
+                    <div class="genero">
+                        <p>Gênero:</p>
+                        <div>
+                            <input type="radio" name="genero" value="Masculino"  id="masc" name="genero">
+                        <label for="masc">Masculino</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="genero" value="Feminino" id="fem" required name="genero">
+                        <label for="fem">Feminino</label>
+                        </div>
+                    </div>
+
+
+
+                </fieldset>
+
+                <fieldset class="termos">
+                    <legend>Termos</legend>
+                    <p>Aceite os termos a seguir:</p>
+                    <div>
+                        <input type="checkbox" name="termos" id="termo1" value="termo1" required
+                            oninvalid="this.setCustomValidity('Aceite este termo para prosseguir.')"
+                            oninput="this.setCustomValidity('')">
+                        <label for="termo1">Aceito ter meus dados armazenados durante o uso do serviço.</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="termos" id="termo2" value="termo2" required
+                            oninvalid="this.setCustomValidity('Aceite este termo para prosseguir.')"
+                            oninput="this.setCustomValidity('')">
+                        <label for="termo2">Aceito os termos e condições desse site.</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="termos" id="termo3" value="termo3">
+                        <label for="termo3">Aceito receber comunicações sobre novidades e ofertas</label>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Cadastrar">  
                 <a href="login.html">Já tenho a conta Beling</a>
             </form>
         </section>
     </main>
     <footer>
-        <p>© 2024 Beling Imóveis. Todos os direitos reservados.</p>
+        <img src="assets/logo.png" alt="Logo Beling apartamentos">
+        <section id="content">
+            <article class="redes">
+                <h3>Nos sigam em nossas redes sociais</h3>
+                <div>
+                    <img src="assets/icones/facebook.svg" alt="Facebook">
+                    <p>Beling Apartamentos</p>
+                </div>
+                <div>
+                    <img src="assets/icones/youtube.svg" alt="Youtube">
+                    <p>@BelingApartamentos</p>
+                </div>
+                <div>
+                    <img src="assets/icones/instagram.svg" alt="Instagram">
+                    <p>@BelingApartamentos</p>
+                </div>
+                <div>
+                    <img src="assets/icones/github.svg" alt="GitHub">
+                    <p>Lleozinnn</p>
+                </div>
+            </article>
+            <article class="contato">
+                <h3>Contate-nos</h3>
+                <div>
+                    <img src="assets/icones/phone-call.svg" alt="Telefone">
+                    <p>(27) 4002 - 8922</p>
+                </div>
+                <div>
+                    <img src="assets/icones/mail.svg" alt="E-mail">
+                    <p>contato@beling.com</p>
+                </div>
+            </article>
+        </section>
+        <p>© 2026 Beling Apartamentos. Todos os direitos reservados.</p>
     </footer>
 </body>
 
