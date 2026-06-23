@@ -1,0 +1,94 @@
+:root {
+    /* Definindo altura das seções */
+    --hero-height: 100vh;
+    --beneficios-height: 85vh;
+    --sobre-height: 90vh;
+    --depoimentos-height: 100vh;
+    --contato-height: 80vh;
+
+    /* Cores de Marca (Baseadas no Logo) */
+    --brand-primary: #2d5a27;      /* Verde assinatura profundo (sofisticado) */
+    --brand-secondary: #c2a649;    /* Dourado/Bege elegante para destaques */
+    --brand-light: #f4f6f0;        /* Off-white esverdeado muito claro (fundos principais) */
+    
+    /* Fundos Alternativos (Para criar ritmo visual entre as seções de 100vh) */
+    --bg-dark: #1b3318;            /* Verde ultra-escuro para seções de grande impacto */
+    --bg-card: #ffffff;            /* Branco puro para destacar os cards do fundo */
+
+    /* Cores de Texto */
+    --text-main: #1c2b19;          /* Verde quase preto para máxima legibilidade */
+    --text-muted: #556b52;         /* Verde acinzentado para parágrafos e subtítulos */
+    --text-light: #ffffff;         /* Texto branco para fundos escuros */
+
+    /* Elementos Interativos e Bordas */
+    --border-color: #e2e8e0;       /* Linhas e bordas sutis */
+    --cta-hover: #22451d;          /* Variação do verde para estados de hover */
+}
+
+main {
+    z-index: 0;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(30px, auto) auto minmax(30px, auto);
+    grid-template-rows: 150px auto 150px;
+}
+video {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(10px);
+}
+form {
+    z-index: 1;
+    position: relative;
+    background-color: var(--brand-light);
+    padding: 40px;
+    border-radius: 20px;
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    max-width: 700px;
+    max-height: 600px;
+    align-self: center;
+    justify-self: center;
+    box-shadow: 0 0 30px 2px gray;
+    border: 2px solid var(--brand-secondary);
+}
+input {
+    font-size: 1.2em;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+label {
+    font-size: 0.9em;
+}
+form article {
+    text-align: center;
+    margin-bottom: 40px;
+}
+form a {
+    text-decoration: none;
+    text-align: end;
+    margin-top: 20px;
+}
+h1 {
+    color: var(--brand-primary);
+}
+p, label {
+    color: var(--brand-secondary);
+}
+a {
+    color: var(--text-muted)
+}
+input[type="submit"] {
+    color: var(--text-light);
+    background-color: var(--brand-primary);
+    border: 1px solid var(--cta-hover);
+    font-weight: 600;
+}

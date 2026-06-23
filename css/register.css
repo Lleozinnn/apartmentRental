@@ -1,0 +1,161 @@
+:root {
+    /* Definindo altura das seções */
+    --hero-height: 100vh;
+    --beneficios-height: 85vh;
+    --sobre-height: 90vh;
+    --depoimentos-height: 100vh;
+    --contato-height: 80vh;
+
+    /* Cores de Marca (Baseadas no Logo) */
+    --brand-primary: #2d5a27;      /* Verde assinatura profundo (sofisticado) */
+    --brand-secondary: #c2a649;    /* Dourado/Bege elegante para destaques */
+    --brand-light: #f4f6f0;        /* Off-white esverdeado muito claro (fundos principais) */
+    
+    /* Fundos Alternativos (Para criar ritmo visual entre as seções de 100vh) */
+    --bg-dark: #1b3318;            /* Verde ultra-escuro para seções de grande impacto */
+    --bg-card: #ffffff;            /* Branco puro para destacar os cards do fundo */
+
+    /* Cores de Texto */
+    --text-main: #1c2b19;          /* Verde quase preto para máxima legibilidade */
+    --text-muted: #556b52;         /* Verde acinzentado para parágrafos e subtítulos */
+    --text-light: #ffffff;         /* Texto branco para fundos escuros */
+
+    /* Elementos Interativos e Bordas */
+    --border-color: #e2e8e0;       /* Linhas e bordas sutis */
+    --cta-hover: #22451d;          /* Variação do verde para estados de hover */
+}
+main {
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(135deg,
+            #F7F5EF 0%,
+            #E8DFC9 30%,
+            #BFCFAE 65%,
+            #D6B97B 100%);
+    display: grid;
+    grid-template-rows: 150px auto auto;
+    grid-template-columns: minmax(30px, auto) auto minmax(30px, auto);
+}
+video {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(8px);
+}
+.cadastro {
+    position: relative;
+    z-index: 2;
+    align-self: center;
+    justify-self: center;
+    grid-row: 2;
+    grid-column: 2;
+    padding: 30px;
+    gap: 15px;
+    background-color: var(--brand-light);
+    border-radius: 20px;
+    max-width: 700px;
+    box-shadow: 0 0 30px 2px gray;
+    border: 2px solid var(--brand-primary);
+}
+.cadastro article {
+    grid-row: 2;
+    grid-column: 2;
+    text-align: center;
+}
+.cadastro form {
+    display: grid;
+    grid-row: 3;
+    grid-column: 2;
+    gap: 15px;
+}
+.cadastro form {
+    grid-template-columns: repeat();
+}
+
+.personalData {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.nome {
+    grid-row: 1;
+    grid-column: span  2;
+}
+.cpf {
+    grid-row: 2;
+    grid-column: 1;
+}
+.telefone {
+    grid-row: 2;
+    grid-column: 2;
+}
+.email {
+    grid-row: 3;
+    grid-column: span 2;
+}
+.nascimento {
+    grid-row: 4;
+    grid-column: span 2;
+}
+.senha {
+    grid-row: 5;
+    grid-column: span 2;
+}
+.genero {
+    grid-row: 6;
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.personalData div label {
+    font-size: 0.9em;
+}
+.personalData div input {
+    font-size: 1.1em;
+    width: calc(100% - 10px);
+    padding: 5px;
+}
+.genero div {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.termos {
+    display: grid;
+}
+fieldset {
+    border-radius: 15px;
+}
+legend {
+    padding-right: 20px;
+    color: var(--brand-primary);
+    font-weight: 700;
+}
+input {
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+input[type="submit"] {
+    background-color: var(--cta-hover);
+    color: var(--text-light);
+    font-size: 15pt;
+    padding: 10px;
+}
+h1 {
+    color: var(--text-main);
+}
+p, a, label {
+    color: var(--text-muted);
+}
+.cadastro a  {
+    text-align: end;
+    text-decoration: none;
+}
+form a {
+    margin-top: 20px;
+}
