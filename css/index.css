@@ -304,7 +304,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url("https://i.pinimg.com/originals/3f/69/dd/3f69dd7616807bd619bca61c0aa90b0d.jpg");
+    background-image: url("../assets/fotos/interior_ap.jpg");
     grid-column: span 3;
     display: grid;
     min-height: var(--contato-height);
