@@ -25,7 +25,7 @@
     --cta-hover: #22451d;          /* Variação do verde para estados de hover */
 }
 main {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     background: linear-gradient(135deg,
             #F7F5EF 0%,
@@ -33,7 +33,7 @@ main {
             #BFCFAE 65%,
             #D6B97B 100%);
     display: grid;
-    grid-template-rows: 150px auto auto;
+    grid-template-rows: 150px auto 150px;
     grid-template-columns: minmax(30px, auto) auto minmax(30px, auto);
 }
 video {
@@ -158,4 +158,7 @@ p, a, label {
 }
 form a {
     margin-top: 20px;
+}
+header {
+    z-index: 3;
 }
